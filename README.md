@@ -1,2 +1,2 @@
 # rsschool-cv
-[GitHub-Pages](https://tatigonch.github.io/rsschool-cv/cv)
+https://tatigonch.github.io/rsschool-cv/cv
