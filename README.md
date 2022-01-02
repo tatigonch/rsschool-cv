@@ -1,2 +1,2 @@
 # rsschool-cv
-My CV
+https://tatigonch.github.io/rsschool-cv/
