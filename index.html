@@ -5,13 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width>, initial-scale=1.0">
     <link href="styles/style.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/img/favicon.ico">
     <title>CV</title>
 </head>
 <body>
+    <header  class = "header">
+        <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+              <li class="nav-item"><a href="#aboutMe" class="nav-link">About me</a></li>
+              <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+              <li class="nav-item"><a href="#codeExample" class="nav-link">Code Example</a></li>
+              <li class="nav-item"><a href="#courses " class="nav-link">Courses </a></li>
+              <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+              <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
+            </ul>
+        </nav>
+    </header>
     <main class="main">
-    <div class="container">
-        <section class="photo">
-        <img src="images/photo.jpg" alt="photo"  width="170" height="170">  
+    <div class="main-container">
+        <section class="contacts" id="contacts">
+        <img src="assets/img/photo.jpg" alt="photo"  width="170" height="170">  
         <h1>Tatsiana Goncharova</h1>
         <h2>Contacts</h2> 
         <ul>
@@ -21,47 +38,61 @@
             <li>GitHub: tatigonch</li>
         </ul>
         </section>
-        <section class="aboutMe">
+        <section class="aboutMe" id="aboutMe">
             <h2>About Me</h2>
-            <p>Nowadays becoming a developer is one of the best career choices someone can make, not only because of the great job opportunities available but also because of the huge rewards in terms of personal satisfaction, self development and creative expression.</p>
+            <p>I’m usually emotional and active person.  I like to laugh and joke.I have got a sense of humor. I’m hard-working and ambitious. I set high goals for myself and I work hard to reach them. I’m sociable, so I have got a lot of friends. I appreciate people’s honesty, frankness and politeness. I don’t like when people are rude and aggressive.I have got some hobbies. I’m always very busy but when I’m free I like coding and I think that nowadays becoming a developer is one of the best career choices someone can make, not only because of the great job opportunities available but also because of the huge rewards in terms of personal satisfaction, self development and creative expression.
+            </p>
         </section>
-        <section class="skills">
+        <section class="skills" id="skills">
             <h2>Skills</h2>
             <ul>
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JS</li>
                 <li>Git</li>
+                <li>Figma</li>
             </ul>
         
         </section>
-        <section class="codeExample">
+        <section class="codeExample" id="codeExample">
             <h2>Code Example</h2>
             <pre>
                 <code>
-function multiply(a, b){
-    return a * b;
-    }
+function sortMyString(S) {
+    let even = S.split('').filter((v, i) => i % 2 === 0).join('')
+    let odd = S.split('').filter((v, i) => i % 2 !== 0).join('')
+    return even + ' ' + odd  
+}
                 </code>
             </pre>   
         </section>
-        <section class="projects">
-            <h2>Projects</h2>
-            <a href="https://tatigonch.github.io/rsschool-cv/">My first project</a>   
-        </section>
-        <section class="education">
-            <h2>Education</h2>
+
+        <section id="courses">
+            <h2>Courses</h2>
             <ul>
-                <li>University: Mogilev State A.Kuleshov University</li>
-                <li>Courses:</li>
-                <ul>
                 <li>Basic HTML Course</li>
                 <li>Basic CSS Course</li>
                 <li>Basic JS Course</li>
-            </ul>
+                <li><a class="link" href="assets\8i23csch.pdf">JS/FE PRE-SCHOOL 2022 (JAVASCRIPT)</a></li>
+            </ul>  
+
+        </section>
+        <section class="projects" id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li><a class="link" href="https://rolling-scopes-school.github.io/tatigonch-JSFEPRESCHOOL/portfolio/">Porfolio</a></li>
+                <li><a class="link" href="https://rolling-scopes-school.github.io/tatigonch-JSFEPRESCHOOL/audioplayer/">AudioPlayer</a></li>
+                <li><a class="link" href="https://rolling-scopes-school.github.io/tatigonch-JSFEPRESCHOOL/image-gallery/">Image Gallery</a></li>
+                <li><a class="link" href="https://rolling-scopes-school.github.io/tatigonch-JSFEPRESCHOOL/tic-tac-toe/">TicTacToe</a></li>
+            </ul>     
+        </section>
+        <section class="education" id="education">
+            <h2>Education</h2>
+            <ul>
+                <li>University: Mogilev State A.Kuleshov University</li> 
             </ul>
         </section>
-        <section class="english">
+        <section class="english" id="english">
          <h2>English</h2>
          <p>Upper-Intermediate (B2)</p>   
          </section>
@@ -70,14 +101,14 @@ function multiply(a, b){
 <footer>
     <div class="container2">
     <div class="link">
-        <p><a href="https://github.com/tatigonch"><img src="images/github.png" width="50" 
+        <p><a href="https://github.com/tatigonch"><img src="assets/img/github.png" width="50" 
             height="50"></a></p>
     </div>
     <div class="link2"> 
-    <h2>2022</h2>
+    <h2 class="year">2022</h2>
 </div>
 <div class="link3">
-    <p><a href="https://rs.school/js/"><img src="images/rs_school_js.svg" width="50" 
+    <p><a href="https://rs.school/js/"><img src="assets/img/rs_school_js.svg" width="50" 
         height="50"></a></p>
 </div>
 </div>
